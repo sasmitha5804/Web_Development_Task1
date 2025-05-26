@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoVibe - Green Lifestyle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Lato&display=swap" rel="stylesheet">
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">EcoVibe</h1>
+      <div class="menu-toggle">&#9776;</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Live Green. Breathe Clean.</h2>
+      <p>Join the movement towards a sustainable future. Eco-friendly living starts with small steps that matter.</p>
+      <a href="#about" class="cta-btn">Join the Green Movement</a>
+    </div>
+  </section>
+
+  <section id="about" class="info-section">
+    <div class="container">
+      <h2>About EcoVibe</h2>
+      <p>EcoVibe is a community-driven initiative promoting sustainable living through eco-education, green products, and mindful habits. Let's reshape our future together — one step at a time.</p>
+    </div>
+  </section>
+
+  <section id="services" class="info-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Eco-friendly product guides</li>
+        <li>Workshops on sustainable living</li>
+        <li>Monthly green lifestyle newsletters</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EcoVibe. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
